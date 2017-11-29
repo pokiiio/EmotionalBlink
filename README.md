@@ -1,5 +1,6 @@
 # EmotionalBlink
 blink NeoPixel LEDs beautifully.
+
 This is a LED library for Arduino or compatible boards. This library requires [Adafruit NeoPixel Library](https://github.com/adafruit/Adafruit_NeoPixel). Please install it before using this library.
 
 ## Installation
@@ -49,3 +50,5 @@ Blink.softly(&pixels, NUMLED, 0, 255, 0, 5000);
 // Blink like party people(パリピ) for 1sec. (a random color blinking)
 Blink.likePartyPeople(&pixels, NUMLED, 1000);
 ```
+
+Let's blink. そしてモテよう！
