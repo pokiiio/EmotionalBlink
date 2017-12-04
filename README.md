@@ -52,3 +52,37 @@ Blink.likePartyPeople(&pixels, NUMLED, 1000);
 ```
 
 Let's blink. そしてモテよう！
+
+
+### One More Thing...
+
+
+**🎄🎄🎄🎄🎄I just added a function for a holiday season!🎄🎄🎄🎄🎄**<br>
+
+
+Use it like this.
+
+```
+#include <Adafruit_NeoPixel.h>
+#include <EmotionalBlink.h>
+
+#define PIN 3
+#define NUMLED 30
+Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMLED, PIN, NEO_RGB + NEO_KHZ800); //おまじない
+
+void setup() {
+  pixels.begin();
+}
+
+void loop() {
+  Blink.likeHolidaySeason(&pixels, NUMLED, 1000);
+}
+```
+
+Just call `Blink.likeHolidaySeason()` and your christmas tree will blink holier.
+
+
+![arduino adafruit neopixel christmas tree](https://lh3.googleusercontent.com/xEw9qLWHZgDHQmN0Vok4f-pKPxWahS8wo3GcMkO2Zmb6J7OTuGhCI1ytouK90QacePfskRIdmaXjDg=s600 "arduino adafruit neopixel christmas tree")
+
+
+A HAPPY HOLIDAY!
