@@ -1,6 +1,10 @@
 # EmotionalBlink
 blink NeoPixel LEDs beautifully.
 
+
+![Blink.likeHolidaySeason](./blink_like_holiday_season.gif)
+
+
 This is a LED library for Arduino or compatible boards. This library requires [Adafruit NeoPixel Library](https://github.com/adafruit/Adafruit_NeoPixel). Please install it before using this library.
 
 ## Installation
