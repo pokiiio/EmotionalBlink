@@ -10,6 +10,7 @@
 class EmotionalBlink
 {
 public:
+  void dismiss(Adafruit_NeoPixel *neopixel, int numLed);
   void softly(Adafruit_NeoPixel *neopixel, int numLed, int r, int g, int b);
   void softly(Adafruit_NeoPixel *neopixel, int numLed, int r, int g, int b, int intervalMsec);
   void likePartyPeople(Adafruit_NeoPixel *neopixel, int numLed, int durationMsec);

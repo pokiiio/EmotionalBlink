@@ -6,8 +6,8 @@ void EmotionalBlink::setColor(Adafruit_NeoPixel *neopixel, int numLed, int r, in
   for (int i = 0; i < numLed; i++)
   {
     neopixel->setPixelColor(i, neopixel->Color(r, g, b));
-    neopixel->show();
   }
+  neopixel->show();
   delay(10);
 }
 
@@ -16,9 +16,14 @@ void EmotionalBlink::setRandomColor(Adafruit_NeoPixel *neopixel, int numLed)
   for (int i = 0; i < numLed; i++)
   {
     neopixel->setPixelColor(i, neopixel->Color(64 * random(1, 5) - 1, 64 * random(1, 5) - 1, 64 * random(1, 5) - 1));
-    neopixel->show();
   }
+  neopixel->show();
   delay(10);
+}
+
+void EmotionalBlink::dismiss(Adafruit_NeoPixel *neopixel, int numLed)
+{
+  setColor(neopixel, numLed, 0, 0, 0);
 }
 
 void EmotionalBlink::softly(Adafruit_NeoPixel *neopixel, int numLed, int r, int g, int b)
