@@ -2,7 +2,7 @@
 blink NeoPixel LEDs beautifully.
 
 
-![Blink.likeHolidaySeason](./blink_like_holiday_season.gif)
+![Blink.likeHolidaySeason](images/holiday.gif)
 
 
 This is a LED library for Arduino or compatible boards. This library requires [Adafruit NeoPixel Library](https://github.com/adafruit/Adafruit_NeoPixel). Please install it before using this library.
@@ -41,19 +41,23 @@ Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMLED, PIN, NEO_RGB + NEO_KHZ800);
 ```
 
 
-
 Call functions like following...
+
 
 ```
 // one-time red blinking.
-Blink.softly(&pixels, NUMLED, 255, 0, 0);
+Blink.softly(&pixels, NUMLED, 255, 255, 0);
+```
 
-// one-time green blinking. (a long blink. the duration is 5sec.)
-Blink.softly(&pixels, NUMLED, 0, 255, 0, 5000);
+![Blink.softly](images/softly.gif)
 
+
+```
 // Blink like party people(パリピ) for 1sec. (a random color blinking)
 Blink.likePartyPeople(&pixels, NUMLED, 1000);
 ```
+
+![Blink.likePartyPeople](images/party.gif)
 
 Let's blink. そしてモテよう！
 
@@ -61,7 +65,14 @@ Let's blink. そしてモテよう！
 ### One More Thing...
 
 
-**🎄🎄🎄🎄🎄I just added a function for a holiday season!🎄🎄🎄🎄🎄**<br>
+<div align="center">🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄</div>
+<div align="center"><b>I just added a function for a holiday season!</b></div>
+<div align="center">🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄</div>
+
+
+
+![Blink.likeHolidaySeason](images/holidaytree.gif)
+
 
 
 Use it like this.
