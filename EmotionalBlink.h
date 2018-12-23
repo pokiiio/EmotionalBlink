@@ -15,6 +15,9 @@ public:
   void softly(Adafruit_NeoPixel *neopixel, int numLed, int r, int g, int b, int intervalMsec);
   void likePartyPeople(Adafruit_NeoPixel *neopixel, int numLed, int durationMsec);
   void likeHolidaySeason(Adafruit_NeoPixel *neopixel, int numLed, int durationMsec);
+  void likePolice(Adafruit_NeoPixel *neopixel, int numLed, int durationMsec);
+  void likeFlash(Adafruit_NeoPixel *neopixel, int numLed, int durationMsec);
+  void likeFlash(Adafruit_NeoPixel *neopixel, int numLed, int durationMsec, int r, int b, int g);
 
 private:
   void setColor(Adafruit_NeoPixel *neopixel, int numLed, int r, int g, int b);

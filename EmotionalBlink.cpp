@@ -68,4 +68,104 @@ void EmotionalBlink::likeHolidaySeason(Adafruit_NeoPixel *neopixel, int numLed, 
   }
 }
 
+void EmotionalBlink::likePolice(Adafruit_NeoPixel *neopixel, int numLed, int durationMsec)
+{
+  int trial = durationMsec / 1000;
+
+  for (int i = 0; i < trial; i++)
+  {
+    setColor(neopixel, numLed, 0, 0, 255);
+    delay(50);
+    dismiss(neopixel, numLed);
+    delay(50);
+    setColor(neopixel, numLed, 0, 0, 255);
+    delay(50);
+    dismiss(neopixel, numLed);
+    delay(100);
+
+    setColor(neopixel, numLed, 0, 255, 0);
+    delay(50);
+    dismiss(neopixel, numLed);
+    delay(50);
+    setColor(neopixel, numLed, 0, 255, 0);
+    delay(50);
+    dismiss(neopixel, numLed);
+    delay(100);
+
+    setColor(neopixel, numLed, 0, 0, 255);
+    delay(50);
+    dismiss(neopixel, numLed);
+    delay(50);
+    setColor(neopixel, numLed, 0, 0, 255);
+    delay(50);
+    dismiss(neopixel, numLed);
+    delay(100);
+
+    setColor(neopixel, numLed, 0, 255, 0);
+    delay(50);
+    dismiss(neopixel, numLed);
+    delay(50);
+    setColor(neopixel, numLed, 0, 255, 0);
+    delay(50);
+    dismiss(neopixel, numLed);
+    delay(100);
+  }
+}
+
+void EmotionalBlink::likeFlash(Adafruit_NeoPixel *neopixel, int numLed, int durationMsec)
+{
+  int trial = durationMsec / 1000;
+
+  for (int i = 0; i < trial; i++)
+  {
+    int r = 64 * random(1, 5) - 1;
+    int b = 64 * random(1, 5) - 1;
+    int g = 64 * random(1, 5) - 1;
+
+    setColor(neopixel, numLed, r, b, g);
+    delay(50);
+    dismiss(neopixel, numLed);
+    delay(50);
+    setColor(neopixel, numLed, r, b, g);
+    delay(50);
+    dismiss(neopixel, numLed);
+    delay(350);
+
+    setColor(neopixel, numLed, r, b, g);
+    delay(50);
+    dismiss(neopixel, numLed);
+    delay(50);
+    setColor(neopixel, numLed, r, b, g);
+    delay(50);
+    dismiss(neopixel, numLed);
+    delay(350);
+  }
+}
+
+void EmotionalBlink::likeFlash(Adafruit_NeoPixel *neopixel, int numLed, int durationMsec, int r, int b, int g)
+{
+  int trial = durationMsec / 1000;
+
+  for (int i = 0; i < trial; i++)
+  {
+    setColor(neopixel, numLed, r, b, g);
+    delay(50);
+    dismiss(neopixel, numLed);
+    delay(50);
+    setColor(neopixel, numLed, r, b, g);
+    delay(50);
+    dismiss(neopixel, numLed);
+    delay(350);
+
+    setColor(neopixel, numLed, r, b, g);
+    delay(50);
+    dismiss(neopixel, numLed);
+    delay(50);
+    setColor(neopixel, numLed, r, b, g);
+    delay(50);
+    dismiss(neopixel, numLed);
+    delay(350);
+  }
+}
+
 EmotionalBlink Blink;
